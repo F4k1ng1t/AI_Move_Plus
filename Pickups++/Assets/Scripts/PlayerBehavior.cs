@@ -214,7 +214,7 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Enemy")
+        if (collision.gameObject.name == "Enemy" || collision.gameObject.name == "Enemy (1)" || collision.gameObject.name == "Enemy (2)")
         {
             gameManager.HP -= 1;
             
